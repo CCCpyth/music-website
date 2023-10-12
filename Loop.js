@@ -5,7 +5,7 @@
     };
 
     // load lrc file
-    const res = await fetch("https://raw.githubusercontent.com/CCCpyth/music-website/main/media/Loop.lrc");
+    const res = await fetch("media/Loop.lrc");
     const lrc = await res.text();
     const lyrics = parseLyric(lrc);
 
