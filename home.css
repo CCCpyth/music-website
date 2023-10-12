@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.container{
+    height:100vh;
+    width:100%;
+    background-image: url(media/earphone.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+.navbar{
+    width:88%;
+    margin:auto;
+    padding:15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 140px;
+    cursor:pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 15px;
+}
+.cover{
+    width: 250px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 6px solid rgb(0, 0, 0);
+    box-shadow: 0 10px 60px;
+    
+}
+.gallery{
+    align-items: center;
+    display:flex;
+    height: 400px;
+    margin:0 auto;
+    position:relative;
+}
+.gi{
+    height:170px;
+    opacity: 0;
+    position: absolute;
+    transition:all 0.3s ease-in-out;
+    width:170px;
+    Z-index:0;
+    border-radius: 15px;
+    background-size: contain;
+
+}
+.g1{
+    left:15%;
+    opacity: .4;
+    transform:translateX(-50%);
+}
+.g2,.g4{
+    height:200px;
+    opacity: .8;
+    width:200px;
+    z-index: 1;
+}
+.g2{
+    left:30%;
+    transform: translateX(-50%);
+}
+.g3{
+    box-shadow: -2px 5px 33px 6px black;
+    height:250px;
+    opacity: 1;
+    left:50%;
+    transform: translateX(-50%);
+    width: 250px;
+    z-index: 2;
+}
+.g4{
+    left: 70%;
+    transform: translateX(-50%);
+}
+.gcontroll{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height:100px;
+
+}
+.gcontroll button{
+    background-color: transparent;
+    border:0;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0 50px;
+    padding:0 12px;
+    text-transform: capitalize;
+}
